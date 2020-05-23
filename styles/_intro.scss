@@ -1,0 +1,102 @@
+main {
+    //layout//
+    .contain-titulo {  
+        grid-column: 2 / 11;
+        max-width: 100%;
+
+    }
+    
+    //tipografia//
+    h1{
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+         //layout//
+        margin-bottom: 0;
+
+       
+        .tachado {
+            //tipografia//
+            text-decoration: line-through;
+        }
+    }
+
+    .intro-mobile {
+        font-family: 'IBM Plex Mono';
+        font-weight: 400;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-bottom: 2em;
+    }
+
+    .intro-desktop {
+        display: none;
+    }
+
+    .boton {
+        //tipografia//
+        font-family: 'IBM Plex Mono';
+        font-weight: 500;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+        //layout//
+        background: #00F3BB;
+        border: none;
+        height: 3em;
+        width: 18em;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:510px) {
+    main {
+        .contain-titulo {
+            //layout//
+            grid-column: 1 / 12;
+            display: grid;
+        }
+        h1{
+            //tipografia//
+            font-size: 64px;
+            //layout//
+            margin-bottom: 0.2em;
+            grid-column: 2 / 12;
+           
+
+            .punto-azul {
+                color: #0000EC;
+            }
+        }
+
+        .intro-desktop {
+            //tipografia//
+            line-height: 24px;
+             //layout//
+            display: inline-block;
+            grid-column: 2 / 8;
+        }
+
+        .intro-mobile {
+            display: none;
+        }
+
+        .boton {
+            grid-column: 2 / 12;
+            transition: 0.5s ease-out;
+        }
+
+        .boton:hover {
+            cursor: pointer;
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            color: white;
+        }
+    }
+}
