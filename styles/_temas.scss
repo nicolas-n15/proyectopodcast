@@ -1,0 +1,68 @@
+.contain-nuestros-temas {
+    grid-column: 2 / 12;
+    margin-top: 2em;
+
+    h2{
+        grid-column: 1 / 9;
+        //tipografia en mobile de h2//
+        font-family: "IBM Plex Sans";
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        //layout//
+        margin-bottom: 2em;
+    }
+
+    .icono{
+        grid-column: 1 / 12;
+        //layout de flex en mobile para contenedores de img y p//
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            //tipografia para p//
+            font-family: 'IBM Plex Sans';
+            font-weight: 600;
+            font-size: 24px;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:975px) {
+        grid-column: 2 / 13;
+        //layout grid para desktop//
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:auto;
+        
+        h2 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 13;
+            //tipografia de h2 en desktop//
+            font-family: "IBM Plex Sans";
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+        .icon-1 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+        }
+        .icon-2 {
+            grid-row: 2 / 3;
+            grid-column: 6 / 8;
+        }
+        .icon-3 {
+            grid-row: 2 / 3;
+            grid-column: 10 / 12;
+        }
+        .icon-4 {
+            grid-row: 2 / 3;
+            grid-column: 14 / 16;
+        }
+    }
+}

@@ -25,9 +25,8 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
-    }
-    
-    @media (min-width:510px){
+        }
+     @media (min-width:510px){
             .contain-titulo {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -40,6 +39,20 @@ body {
        grid-template-columns: repeat(12, 1fr);
        grid-template-rows: auto;
 
+       //grid para phoneimagen//
+       .container-img{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+       }
+
+    //grid para galeria de invitados//
+    .container-inv {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
        
    }  
 

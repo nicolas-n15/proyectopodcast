@@ -32,11 +32,11 @@
             height: 232px;
             border: none;
         }
+    }
     
-    }    
+    
 
     @media (min-width:510px){
-        padding-top: 5em;
         .podcast{
         display: grid;
         grid-template-columns: 1fr 1fr;
