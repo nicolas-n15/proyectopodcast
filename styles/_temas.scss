@@ -4,7 +4,7 @@
 
     h2{
         grid-column: 1 / 9;
-        //tipografia en mobile de h2//
+        //tipografia h2//
         font-family: "IBM Plex Sans";
         font-size: 36px;
         color: #060A24;
@@ -16,7 +16,6 @@
 
     .icono{
         grid-column: 1 / 12;
-        //layout de flex en mobile para contenedores de img y p//
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,7 +33,7 @@
 
     @media (min-width:975px) {
         grid-column: 2 / 13;
-        //layout grid para desktop//
+        //layout desktop//
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows:auto;
@@ -42,7 +41,7 @@
         h2 {
             grid-row: 1 / 2;
             grid-column: 1 / 13;
-            //tipografia de h2 en desktop//
+            //tipografia//
             font-family: "IBM Plex Sans";
             font-size: 48px;
             color: #060A24;
