@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@100;400;600&display=swap');
-@import "./header";
-@import "./grid";
-@import "./intro";
-@import "./episodios";
-@import "./phone";
-@import "./dondevenimos";
-@import "./nuestrostemas";
-@import "./footer";
+@import "header";
+@import "grid";
+@import "intro";
+@import "episodios";
+@import "galeriainv";
+@import "dondevenimos";
+@import "temas";
+@import "footer";
 
 body{
     margin: 0 auto;

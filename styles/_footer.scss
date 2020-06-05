@@ -8,7 +8,6 @@ footer{
         z-index: 10;
         clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% 100%, 0 100%);
         margin-top: 10vw;
-        //display flex//
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,7 +39,6 @@ footer{
 
     .boton{
         
-            //tipografia//
             font-family: 'IBM Plex Mono';
             font-weight: 500;
             font-size: 16px;
@@ -48,7 +46,6 @@ footer{
             letter-spacing: 0;
             text-align: center;
             line-height: 22px;
-            //layout//
             background: #00F3BB;
             border: none;
             height: 3em;
@@ -67,12 +64,11 @@ footer{
 .container-footer{
     grid-column: 2 / 12;
     padding: 5em 0;
-    //display flex// 
     display: flex;
     flex-direction: column;
     place-items: center;
 
-    .rights{
+    .derechos{
         font-family: 'IBM Plex Mono';
         font-weight: 400;
         font-size: 14px;
@@ -83,7 +79,6 @@ footer{
 
     .redes-sociales{
         width: 100%;
-        //display flex//
         display: flex;
         justify-content: space-evenly;
 
@@ -91,7 +86,44 @@ footer{
             text-decoration: none;
         }
         i{
-            
+            font-family: fontawesome !important;
+            color: #060A24;
+            padding: 1em;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+
+        
+        
+    }
+    
+  
+}
+@media (min-width:650px){
+    footer{
+        
+        .container-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1.5em;
+
+            .derechos{
+                    font-family: 'IBM Plex Mono';
+                    font-size: 16px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    line-height: 28px;
+            }
+            .redes-sociales{
+                width: 70%;
+                justify-content: flex-end;
+            }
+
         }
     }
-}
+       
+     
+      
+  }
