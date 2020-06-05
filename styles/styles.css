@@ -15,17 +15,12 @@ header {
           justify-content: space-between;
 }
 
-header .izquierda {
-  border: 1px solid red;
-}
-
 header .izquierda .logo {
   display: block;
   padding: 15px;
 }
 
 header .derecha {
-  border: 1px solid blue;
   width: 0 auto;
 }
 
@@ -126,15 +121,11 @@ header .derecha .menu a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header .izquierda {
-    border: 1px solid red;
-  }
   header .izquierda .logo {
     padding: 15px;
     margin: 0 auto;
   }
   header .derecha {
-    border: 1px solid blue;
     width: 0 auto;
   }
   header .derecha nav .menu-icon {
