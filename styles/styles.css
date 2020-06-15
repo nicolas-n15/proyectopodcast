@@ -335,6 +335,9 @@ main .boton:hover {
   }
   main h1 {
     font-size: 64px;
+    font-family: 'IBM Plex Sans';
+    color: #060A24;
+    letter-spacing: 0;
     margin-bottom: 0.2em;
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
@@ -344,11 +347,15 @@ main .boton:hover {
     color: #0000EC;
   }
   main .intro-desktop {
-    line-height: 24px;
     display: inline-block;
     -ms-grid-column: 2;
     -ms-grid-column-span: 6;
     grid-column: 2 / 8;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
   }
   main .intro-mobile {
     display: none;
@@ -387,14 +394,13 @@ main .boton:hover {
   -ms-grid-column-span: 10;
   grid-column: 2 / 12;
   font-family: 'IBM Plex Sans';
-  font-weight: 100;
   font-size: 36px;
   color: #FFFFFF;
   letter-spacing: 0;
-  line-height: 42px;
-  font-weight: 250;
+  font-weight: 380;
   margin-top: 3em;
-  margin-left: 3em;
+  margin-left: 1em;
+  line-height: 42px;
 }
 
 .episodios .podcast {
@@ -409,7 +415,14 @@ main .boton:hover {
   border: none;
 }
 
-@media (min-width: 510px) {
+@media (min-width: 550px) and (max-width: 620px) {
+  .episodios h2 {
+    font-family: 'IBM Plex Sans';
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 3em;
+  }
   .episodios .podcast {
     display: -ms-grid;
     display: grid;
@@ -417,7 +430,29 @@ main .boton:hover {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 2em;
         grid-template-rows: 1fr 1fr 2em;
-    grid-gap: 2em;
+    grid-gap: .1em;
+  }
+}
+
+@media (min-width: 620px) {
+  .episodios {
+    padding-top: 7em;
+  }
+  .episodios h2 {
+    font-family: 'IBM Plex Sans';
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 1em;
+  }
+  .episodios .podcast {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 2em;
+        grid-template-rows: 1fr 1fr 2em;
+    grid-gap: 2.5em;
   }
 }
 

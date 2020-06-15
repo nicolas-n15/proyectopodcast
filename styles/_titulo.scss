@@ -72,6 +72,9 @@ main {
         h1{
             //tipografia//
             font-size: 64px;
+            font-family: 'IBM Plex Sans';
+            color: #060A24;
+            letter-spacing: 0;
             //layout//
             margin-bottom: 0.2em;
             grid-column: 2 / 12;
@@ -83,11 +86,13 @@ main {
         }
 
         .intro-desktop {
-            //tipografia//
-            line-height: 24px;
-             //layout//
             display: inline-block;
             grid-column: 2 / 8;
+            font-family: 'IBM Plex Mono';
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
         }
 
         .intro-mobile {
@@ -106,3 +111,4 @@ main {
         }
     }
 }
+

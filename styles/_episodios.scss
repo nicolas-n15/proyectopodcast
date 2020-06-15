@@ -13,14 +13,14 @@
        
         grid-column: 2 / 12;
         font-family: 'IBM Plex Sans';
-        font-weight: 100;
         font-size: 36px;
         color: #FFFFFF;
         letter-spacing: 0;
-        line-height: 42px;
-        font-weight: 250;
+        font-weight: 380;
         margin-top: 3em;
-        margin-left: 3em;
+        margin-left: 1em;
+        line-height: 42px;
+        
         
 
     }
@@ -36,13 +36,41 @@
     
     
 
-    @media (min-width:510px){
+    @media (min-width:550px) and (max-width:620px){
+
+        h2{
+            font-family: 'IBM Plex Sans';
+            font-size: 48px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            margin-left: 3em;
+        }
         .podcast{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 2em;
-        grid-gap: 2em;
+        grid-gap: .1em;
         }
-
     }
+    @media (min-width:620px){
+        //display grid//
+        padding-top: 7em;
+        //tipo//
+        h2{
+            font-family: 'IBM Plex Sans';
+            font-size: 48px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            margin-left: 1em;
+        }
+        .podcast{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:1fr 1fr 2em;
+            grid-gap: 2.5em;
+        }
+    } 
+
 }
+
+
