@@ -1,0 +1,192 @@
+$color-primario: #0000EC;
+header {
+    //tipografia general//
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+
+    //layout del header//
+    margin: 0 auto;
+    width: 100%;
+
+    //display flex para header//
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    //que no se vea el input checked//
+    .menu-btn {
+      display: none;
+    }
+    
+    .contain-logo {
+        padding: 15px;
+        margin-top: .5em;
+    }
+
+    
+    .contain-nav {
+        .menu {
+        list-style: none;
+        overflow: hidden;
+        background-color: $color-primario;
+        
+        position: absolute;
+        left: 0;
+        width: 100%;
+        }
+        
+        .menu {
+          max-height: 0;
+          display: block;
+          transition: .5s ease-in-out;
+        }
+  
+        a {
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color:#FFFFFF;
+        transition: .5s ease;
+        }
+
+        a:hover {
+          color: rgba(255, 255, 255, .5);
+        }
+         
+        //el contenedor del icono hamburguesa//
+        .menu-icon {
+          cursor: pointer;
+          padding: 18px 18px;
+          margin: .5em;
+          position: relative;
+        }
+
+        
+        .nav-icon {
+            background:#060A24;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+          }
+          
+          .nav-icon:before,
+          .nav-icon:after {
+            background: #060A24;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+          }
+          
+          .nav-icon:before {
+            top: 5px;
+          }
+          
+          .nav-icon:after {
+            top: -5px;
+          }
+
+          //cruz en checked//
+          .menu-btn:checked ~ .menu-icon .nav-icon {
+            background: transparent;
+          }
+          
+          .menu-btn:checked ~ .menu-icon .nav-icon::before {
+            transform: rotate(-45deg);
+            top:0;
+          }
+          
+          .menu-btn:checked ~ .menu-icon .nav-icon::after {
+            transform: rotate(45deg);
+            top:0;
+          }
+
+          // estado checked//
+          .menu-btn:checked ~ .menu {
+            max-height: 100%;
+          }
+          
+          @media (min-width: 520px) and (max-width: 700px) {
+              .menu {
+                margin-right: 2em;
+                background-color: white;
+                //display del menu//
+                display: flex;
+                position: relative;
+                left: 0;
+                max-height: 100%;
+              }
+
+              .menu-icon {
+                display: none;
+              }
+
+              a {
+                padding: 10px 10px;
+                color: #060A24;
+                line-height: 28px;
+                transition: 0.2s ease;
+              }
+              
+              a:hover {
+                  font-size: medium;
+                  color: #00F3BB;
+                  text-decoration: line-through;
+              }
+
+              a:active{
+                color: rgba(6,10,36,0.56);
+              }
+
+        }
+          
+          @media (min-width: 700px) {
+              .menu {
+                margin-right: 2em;
+                background-color: white;
+                //display del menu//
+                display: flex;
+                position: relative;
+                left: 0;
+                max-height: 100%;
+              }
+
+              .menu-icon {
+                display: none;
+              }
+
+              a {
+                padding: 10px 30px;
+                color: #060A24;
+                line-height: 28px;
+                transition: 0.2s ease;
+              }
+
+              a:hover {
+                  font-size: medium;
+                  color: #00F3BB;
+                  text-decoration: line-through;
+              }
+
+              a:active{
+                color: rgba(6,10,36,0.56);
+              }
+          }
+          
+    }  
+
+    @media (min-width:610px) {
+      .contain-logo {
+        margin-left: 1.5em;
+        img{
+          transform: scale(1.6);
+        }
+      }
+    }
+}
