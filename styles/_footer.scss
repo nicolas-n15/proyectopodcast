@@ -89,11 +89,17 @@ footer{
             font-family: fontawesome !important;
             color: #060A24;
             padding: 1em;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px;
+            font-style: normal;
+            transition: .1s ease-in-out;
         }
         i:hover{
             cursor: pointer;
+            font-size: larger;
+            color: rgba(6, 10, 36, .7);
         }
-
         
         
     }

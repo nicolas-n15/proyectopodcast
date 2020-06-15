@@ -823,10 +823,18 @@ footer .boton:hover {
   font-family: fontawesome !important;
   color: #060A24;
   padding: 1em;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  font-style: normal;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .container-footer .redes-sociales i:hover {
   cursor: pointer;
+  font-size: larger;
+  color: rgba(6, 10, 36, 0.7);
 }
 
 @media (min-width: 650px) {
